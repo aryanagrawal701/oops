@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Passenger {
+private:
+    string name;
+    int age;
+    string ticketNumber;
+public:
+    Passenger(string passengerName, int passengerAge, string passengerTicketNumber) {
+        name = passengerName;
+        age = passengerAge;
+        ticketNumber = passengerTicketNumber;
+    }
+    void displayDetails() {
+        cout << "Passenger Details:" << endl;
+        cout << "Name: " << name << endl;
+        cout << "Age: " << age << endl;
+        cout << "Ticket Number: " << ticketNumber << endl;
+    }
+};
+int main() {
+    Passenger passenger1("Dhruv", 19, "123456");
+    passenger1.displayDetails();
+    return 0;
+}
+Ans 1. The purpose of the constructor in pasenegr class is to give the passenger details like name,age and ticket no.
+        In other words it is used to initalizen passenger objects in new atribytes.
+ANS2. WE use displaydetails() for output of passengers details like name, age,and ticket no. in our passenger class .
+ANS3.  If we didnt use contrurctor we have to give manully values of passenger details like name , age ticket no. in our code .
